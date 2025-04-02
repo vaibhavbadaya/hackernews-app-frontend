@@ -52,7 +52,7 @@ function StoryItem() {
               <div className="story-details">
                 <span>Author: {story.author}</span>
                 <span>Score: {story.score}</span>
-                <span>Posted: {story.time}</span>
+                <span>Posted On: {story.time}</span>
               </div>
             </li>
           ))}
