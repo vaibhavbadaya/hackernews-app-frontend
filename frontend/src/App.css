@@ -5,10 +5,11 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poopins', sans-serif;
   line-height: 1.6;
   background-color: #f5f5f5;
   color: #333;
+  padding:20px;
 }
 
 .App {
@@ -18,50 +19,53 @@ body {
 }
 
 .App-header {
-  background-color: #ff6600;
+  background-color: #f9660b;
   padding: 20px;
   color: white;
   margin-bottom: 20px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight:bold;
+  box-shadow:0 4px px rgba(0,0,0,0,1)
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
-  color: #666;
+  color: #383837;
   padding: 10px;
   border-top: 1px solid #ddd;
+  transition:transform 0.2s ease-in-out;
 }
 
 .story-item {
-  background-color: white;
+  background-color: ivory;
   border-radius: 5px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom:auto;
+  transition: transform 0.2s ease-in-out;
 }
 
 .story-item ul {
   list-style-type: none;
 }
 
-.story-item {
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.story-item:last-child {
-  border-bottom: none;
+.story-item:hover {
+  transform: scale(1.02);
 }
 
 .story-item h2 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-size: 1.3rem;
+  margin-bottom: 13px;
+  color: #707259;
 }
 
 .story-item a {
   color: #333;
   text-decoration: none;
+  font-weight:bold;
 }
 
 .story-item a:hover {
@@ -81,8 +85,8 @@ footer {
   padding: 20px;
   text-align: center;
   background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .error {
@@ -93,7 +97,9 @@ footer {
   .App {
     padding: 10px;
   }
-  
+  .story-item {
+    padding: 15px;
+  }
   .story-details {
     flex-direction: column;
     gap: 5px;
